@@ -11,12 +11,13 @@
 #include <ctype.h>
 #include <stack>
 using namespace std;
-#define lowbit(i) ((i)&-(i))
-stack<int> s;
-const int maxn = 100010;
-string str;
 int main() {
 	int x, query;
 	scanf("%d", &query);
+	string command;
+	while (query--) {
+		cin >> command;
+
+	}
 	return 0;
 }

@@ -1,0 +1,14 @@
+﻿  1026 Table Tennis .cpp
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(35): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(100): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(143): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(52): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(57): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(66): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\wallacezh\source\repos\pat\1026 table tennis\1026 table tennis .cpp(72): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+  1026 Table Tennis.vcxproj -> C:\Users\wallacezh\source\repos\PAT\Debug\1026 Table Tennis.exe
