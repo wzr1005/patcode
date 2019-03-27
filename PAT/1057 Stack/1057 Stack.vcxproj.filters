@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1057 Stack.cpp">
+    <ClCompile Include="树状数组.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

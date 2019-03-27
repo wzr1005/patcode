@@ -1,0 +1,5 @@
+﻿  1061 Dating.cpp
+c:\users\wallacezh\source\repos\pat\1061 dating\1061 dating.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1061 dating\1061 dating.cpp(28): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1061 dating\1061 dating.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+  1061 Dating.vcxproj -> C:\Users\wallacezh\source\repos\PAT\Debug\1061 Dating.exe

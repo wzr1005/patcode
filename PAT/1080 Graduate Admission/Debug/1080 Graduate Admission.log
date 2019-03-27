@@ -1,0 +1,63 @@
+﻿  1080 Graduate Admission.cpp
+c:\users\wallacezh\source\repos\pat\1080 graduate admission\1080 graduate admission.cpp(50): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1080 graduate admission\1080 graduate admission.cpp(71): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1080 graduate admission\1080 graduate admission.cpp(35): warning C4101: “GE”: 未引用的局部变量
+c:\users\wallacezh\source\repos\pat\1080 graduate admission\1080 graduate admission.cpp(35): warning C4101: “GI”: 未引用的局部变量
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): error C2672: “operator __surrogate_func”: 未找到匹配的重载函数
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1107): note: 参见对正在编译的函数 模板 实例化“bool std::_Debug_lt_pred<_Pr&,student&,student&>(std::less<void>&,_Ty1,_Ty2) noexcept(<expr>)”的引用
+          with
+          [
+              _Pr=std::less<void>,
+              _Ty1=student &,
+              _Ty2=student &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(4000): note: 参见对正在编译的函数 模板 实例化“std::pair<_RanIt,_RanIt> std::_Partition_by_median_guess_unchecked<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)”的引用
+          with
+          [
+              _RanIt=student *,
+              _Pr=std::less<void>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(4034): note: 参见对正在编译的函数 模板 实例化“void std::_Sort_unchecked<student*,_Fn>(_RanIt,_RanIt,int,_Pr)”的引用
+          with
+          [
+              _Fn=std::less<void>,
+              _RanIt=student *,
+              _Pr=std::less<void>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(4040): note: 参见对正在编译的函数 模板 实例化“void std::sort<_RanIt,std::less<void>>(const _RanIt,const _RanIt,_Pr)”的引用
+          with
+          [
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<student>>>,
+              _Pr=std::less<void>
+          ]
+  c:\users\wallacezh\source\repos\pat\1080 graduate admission\1080 graduate admission.cpp(70): note: 参见对正在编译的函数 模板 实例化“void std::sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(const _RanIt,const _RanIt)”的引用
+          with
+          [
+              _Ty=student,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<student>>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): error C2893: 未能使函数模板“unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) const”专用化
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): note: 用下列模板参数:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): note: “_Ty1=student &”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): note: “_Ty2=student &”
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(1108): error C2056: 非法表达式
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3907): error C2672: “operator __surrogate_func”: 未找到匹配的重载函数
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3907): error C2893: 未能使函数模板“unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) const”专用化
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3907): note: 用下列模板参数:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3907): note: “_Ty1=student &”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3907): note: “_Ty2=student &”
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3914): error C2672: “operator __surrogate_func”: 未找到匹配的重载函数
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3914): error C2893: 未能使函数模板“unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) const”专用化
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3914): note: 用下列模板参数:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3914): note: “_Ty1=student &”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3914): note: “_Ty2=student &”
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3929): error C2672: “operator __surrogate_func”: 未找到匹配的重载函数
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3929): error C2893: 未能使函数模板“unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) const”专用化
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3929): note: 用下列模板参数:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3929): note: “_Ty1=student &”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3929): note: “_Ty2=student &”
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3949): error C2672: “operator __surrogate_func”: 未找到匹配的重载函数
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3949): error C2893: 未能使函数模板“unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) const”专用化
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3949): note: 用下列模板参数:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3949): note: “_Ty1=student &”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(3949): note: “_Ty2=student &”

@@ -1,0 +1,4 @@
+﻿  1084 Broken Keyboard.cpp
+c:\users\wallacezh\source\repos\pat\1084 broken keyboard\1084 broken keyboard.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\wallacezh\source\repos\pat\1084 broken keyboard\1084 broken keyboard.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+  1084 Broken Keyboard.vcxproj -> C:\Users\wallacezh\source\repos\PAT\Debug\1084 Broken Keyboard.exe
