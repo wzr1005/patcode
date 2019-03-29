@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1153 Decode Registration Card of PAT.cpp">
+    <ClCompile Include="重写.cpp">
       <SubType>
       </SubType>
     </ClCompile>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1153 Decode Registration Card of PAT.cpp">
+    <ClCompile Include="重写.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
