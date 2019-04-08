@@ -1,0 +1,17 @@
+﻿  1141 PAT Ranking of Institutions.cpp
+c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(19): warning C4099: “std::vector<school,std::allocator<_Ty>>”: 类型名称以前使用“class”现在使用的是“struct”
+          with
+          [
+              _Ty=school
+          ]
+  c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(19): note: 参见“std::vector<school,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=school
+          ]
+c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(55): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(59): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+  c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(59): note: 请考虑在格式字符串中使用“%zd”
+c:\users\wallacezh\source\repos\pat\1141 pat ranking of institutions\1141 pat ranking of institutions.cpp(45): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+  1141 PAT Ranking of Institutions.vcxproj -> C:\Users\wallacezh\source\repos\PAT\x64\Debug\1141 PAT Ranking of Institutions.exe
