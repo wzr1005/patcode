@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1154 Vertex Coloring.cpp" />
     <ClCompile Include="1154.cpp">
       <SubType>
       </SubType>

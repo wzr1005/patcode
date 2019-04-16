@@ -1,0 +1,9 @@
+﻿  1030完美数列.cpp
+c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(14): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(25): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“__int64”
+  c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(25): note: 请考虑在格式字符串中使用“%lld”
+  c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(25): note: 请考虑在格式字符串中使用“%Id”
+  c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(25): note: 请考虑在格式字符串中使用“%I64d”
+c:\users\wallacezh\source\repos\pat\1030完美数列\1030完美数列.cpp(8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+  1030完美数列.vcxproj -> C:\Users\wallacezh\source\repos\PAT\x64\Debug\1030完美数列.exe

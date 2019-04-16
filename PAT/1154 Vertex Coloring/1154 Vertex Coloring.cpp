@@ -11,41 +11,39 @@
 #include <ctype.h>
 using namespace std;
 const int maxn = 10010;
-const int INF = (1<< 32) - 1;
-int G[maxn][maxn] = { 0 };
-int n, m, num;
-int visit[maxn], color[maxn];
-void DFS(int v) {
-	visit[v] = 1;
-	num++;
-	for (int i = 0; i < n; i++) {
-		if (G[v][i] && !visit[i] && color[v] != color[i]) {
-			DFS(i);
-		}
+struct edge {
+	int v1, v2;
+	edge(int _v1, int _v2) {
+		v1 = _v1;
+		v2 = _v2;
 	}
-}
+};
+int n, m;
+vector<edge> edges;
 int main() {
-	//fill(G[0], G[0] + maxn * maxn, INF);
 	cin >> n >> m;
-	int u, v;
+	int v1, v2;
 	for (int i = 0; i < m; i++) {
-		cin >> u >> v;
-		G[u][v] = G[v][u] = 1;
+		cin >> v1 >> v2;
+		edges.push_back(edge(v1, v2));
 	}
 	int k; cin >> k;
+	int color[maxn];
 	for (int i = 0; i < k; i++) {
-		memset(visit, 0, sizeof(visit));
-		num = 0;
-		int maxcolor = -1;
+		set<int>cset;
 		for (int j = 0; j < n; j++) {
 			cin >> color[j];
-			maxcolor = max(color[j], maxcolor);
+			cset.insert(color[j]);
 		}
-		DFS(0);
-		if (num < n) {
-			printf("No\n");
+		int flag = 1;
+		for (int j = 0; j < edges.size(); j++) {
+			if (color[edges[j].v1] == color[edges[j].v2]) {
+				printf("No\n");
+				flag = 0;
+				break;
+			}
 		}
-		else printf("%d-coloring\n", maxcolor);
+		if (flag)	printf("%d-coloring\n", cset.size());
 	}
 	return 0;
 }

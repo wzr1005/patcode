@@ -1,0 +1,3 @@
+﻿  1136 A Delayed Palindrome.cpp
+c:\users\wallacezh\source\repos\pat\1136 a delayed palindrome\1136 a delayed palindrome.cpp(26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  1136 A Delayed Palindrome.vcxproj -> C:\Users\wallacezh\source\repos\PAT\x64\Debug\1136 A Delayed Palindrome.exe

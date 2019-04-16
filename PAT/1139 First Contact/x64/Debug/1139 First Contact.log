@@ -1,0 +1,10 @@
+﻿  1139 First Contact.cpp
+c:\users\wallacezh\source\repos\pat\1139 first contact\1139 first contact.cpp(48): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+  c:\users\wallacezh\source\repos\pat\1139 first contact\1139 first contact.cpp(48): note: 请考虑在格式字符串中使用“%zd”
+c:\users\wallacezh\source\repos\pat\1139 first contact\1139 first contact.cpp(20): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\wallacezh\source\repos\pat\1139 first contact\1139 first contact.cpp(32): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\wallacezh\source\repos\pat\1139 first contact\1139 first contact.cpp(36): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+  1139 First Contact.vcxproj -> C:\Users\wallacezh\source\repos\PAT\x64\Debug\1139 First Contact.exe
