@@ -1,2 +1,4 @@
 ﻿  test.cpp
+c:\users\wallacezh\source\repos\pat\pat\test.cpp(73): warning C4477: “printf”: 格式字符串“%lu”需要类型“unsigned long”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+  c:\users\wallacezh\source\repos\pat\pat\test.cpp(73): note: 请考虑在格式字符串中使用“%zu”
   PAT.vcxproj -> C:\Users\wallacezh\source\repos\PAT\x64\Debug\test.exe

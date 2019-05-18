@@ -1,112 +1,81 @@
 #include <iostream>
+#include <string>
 #include <vector>
 #include <algorithm>
-
-const char *INSERT = "Insertion Sort";
-const char *MERGE = "Merge Sort";
-
-bool sorted(const std::vector<int> &ser, int end)
+#include <stdio.h>
+using namespace std;
+bool check_valid(string src)
 {
-	while (end > 0)
+	for (size_t i = 0; i < src.size(); ++i)//src中含有非法字符
 	{
-		if (ser.at(end) < ser.at(end - 1))
-		{
+		if (!isdigit(src[i]) && src[i] != '.' && src[i] != '-')
 			return false;
-		}
-		end--;
 	}
-	return true;
-}
+	if (src.size())
+	{
+		if (src[0] == '-')
+			src = src.substr(1);
+	}
+	if (src.size() == 0)
+		return false;
+	if (src[0] == '.')//没有整数部分，输入非法
+		return false;
 
-// 0: insert
-// 1: merge
-// 如果是插入排序, 序列排序是从左向右, 所以从右向左, 找到第一个与原序列不同的,
-// 如果这个值之前都是有序的(前面的都排好了), 那就是插入, 否则就是merge
-// 其实可以发现, merge第一轮做完, 最后三个(或两个)元素就发生位置变化了, 而在其前面的序列, 不一定有序.
-int detectType(const std::vector<int> &ser, const std::vector<int> &raw)
-{
-	int last_index = ser.size() - 1;
-	for (; last_index > 0; last_index--)
+	if (count(src.begin(), src.end(), '.') > 1) //至少两个小数点
+		return false;
+	else if (count(src.begin(), src.end(), '.') == 0)//没有小数点
 	{
-		if (ser.at(last_index) != raw.at(last_index))
-		{
-			break;
-		}
+		if (atoi(src.c_str()) < -1000 || atoi(src.c_str()) > 1000)
+			return false;
+		else
+			return true;
 	}
-	if (sorted(ser, last_index))
+	else//有且仅有一个小数点
 	{
-		return 0;
+		string r1, r2;
+		r1 = src.substr(0, src.find('.'));//整数部分
+		if (src.find('.') < 1 << 30)
+			r2 = src.substr(src.find('.') + 1);//小数部分
+		if (r2.size() > 2)//精度大于2位
+			return false;
+		if (atof(src.c_str()) > 1000.0
+			|| atof(src.c_str()) < -1000.0)//超出数据范围
+			return false;
+		return true;
 	}
-	return 1;
 }
-
-// 找到多长序列已有序, 比如 3 1 2 8 7 5 9 4 6 0 -> 1 2 3 7 8 5 9 4 6 0
-// 前面 1 2 3 7 8 已有序, 返回 5, 即从左往右起第5(从0开始记)个已不再有序
-// 对于插入排序而言, 也就是下一轮要处理的元素就是第5个
-// 对于merge而言, 表明现在分段已经分到了5, 即原 序列被分为5(个)-5(个)-5(个)-..., 其中每5个已有序, 则下一轮, 应该是每10个
-int sortedLength(const std::vector<int> &s)
-{
-	int index = 1;
-	while (index < s.size() - 1)
-	{
-		if (s.at(index) < s.at(index - 1))
-		{ // equal?
-			break;
-		}
-		index++;
-	}
-	return index;
-}
-void insertNext(std::vector<int> &s)
-{
-	int index = sortedLength(s);
-	std::sort(s.begin(), s.begin() + index + 1); // 已排序的序列延长1个
-}
-void mergeNext(std::vector<int> &s)
-{
-	int sorted_length = sortedLength(s);
-	int offset = s.size() % (2 * sorted_length); // 不足一个分段的
-	int index = 0;
-	for (; index < s.size() - offset; index += 2 * sorted_length)
-	{
-		std::sort(s.begin() + index, s.begin() + index + 2 * sorted_length);
-	}
-	std::sort(s.begin() + index, s.end());
-}
-
 int main()
 {
-	int N;
-	std::cin >> N;
-	std::vector<int> raw(N);
-	std::vector<int> mid(N);
+	std::ios::sync_with_stdio(false);
 
-	for (auto i = 0; i < N; i++)
-	{
-		std::cin >> raw[i];
-	}
-	for (auto i = 0; i < N; i++)
-	{
-		std::cin >> mid[i];
-	}
+	size_t cnt, i;
+	string src;
+	vector<string> v;
 
-	int type = detectType(mid, raw);
-	if (type == 0)
+	cin >> cnt;
+	//    string t[6]={"-","-1.1","0.111",
+	//    "1.1.1","-1000","1000.1"};
+	//    cnt=6;
+	for (i = 0; i < cnt; ++i)
 	{
-		std::cout << INSERT << std::endl;
-		insertNext(mid);
+		cin >> src;
+		//        src=t[i];
+		if (check_valid(src))
+			v.push_back(src);
+		else
+			cout << "ERROR: " << src << " is not a legal number\n";
 	}
+	double sum = 0;
+	for (i = 0; i < v.size(); ++i)
+		sum += atof(v[i].c_str());
+	if (v.size() > 1)
+	{
+		printf("The average of %lu numbers is %.2f\n",
+			v.size(), sum / v.size());
+	}
+	else if (v.size() == 1)
+		printf("The average of 1 number is %.2f\n", sum);
 	else
-	{
-		std::cout << MERGE << std::endl;
-		mergeNext(mid);
-	}
-	for (auto i = mid.begin(); i != mid.end(); i++)
-	{
-		if (i != mid.begin())
-		{
-			std::cout << " ";
-		}
-		std::cout << *i;
-	}
+		cout << "The average of 0 numbers is Undefined" << endl;
+	return 0;
 }
